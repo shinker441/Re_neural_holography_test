@@ -100,7 +100,7 @@ print(f'  - reconstruction with {opt.prop_model}... ')
 data_path = './data'
 recon_path = './recon'
 
-# Augmented image loader (if you want to shuffle, augment dataset, put options accordingly.) 
+# Augmented image loader (if you want to shuffle, augment dataset, put options accordingly.)
 image_loader = ImageLoader(data_path, channel=channel if channel < 3 else None,
                            image_res=image_res, homography_res=roi_res,
                            crop_to_homography=True,
